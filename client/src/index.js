@@ -9,6 +9,7 @@ import HomePage from "./pages/Home";
 import SignUpPage from "./pages/SignUp";
 import LoginPage from "./pages/Login";
 import MissingPage from "./pages/Missing";
+import AdminDashboardPage from "./pages/AdminDashboard";
 import RequireAuth from "./components/RequireAuth";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         {/* PROTECTED ROUTES */}
         <Route path="/home" element={<HomePage />}></Route>
+        <Route path="/admin-dashboard" element={<AdminDashboardPage />} />
 
         {/* PUBLIC ROUTES */}
         <Route path="/" element={<Layout />} />

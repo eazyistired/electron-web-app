@@ -10,6 +10,9 @@ const LoggedinLinks = () => {
       <Link className="nav-link active" to="/home">
         Home
       </Link>
+      <Link className="nav-link active" to="/admin-dashboard">
+        Admin Dashboard
+      </Link>
       <Link
         className="nav-link active"
         to="/"
@@ -37,7 +40,6 @@ const LoggedoutLinks = () => {
 
 const NavBar = ({ username = "none" }) => {
   const [logged] = useAuth();
-  console.log(useAuth());
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg">

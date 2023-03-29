@@ -1,5 +1,5 @@
 from flask_restx import Resource, Namespace, fields
-from models import User, Admin, Contestant
+from models import User, Team
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import (
     JWTManager,
@@ -52,7 +52,8 @@ class SignUp(Resource):
             email=data.get("email"),
             password=generate_password_hash(data.get("password")),
             first_name=data.get("first_name"),
-            last_name=data.get("last_name")
+            last_name=data.get("last_name"),
+            team_id=3
         )
 
         new_user.save()

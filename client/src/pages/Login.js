@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
-import FormCard from "../components/FormCard";
-import LoginForm from "../components/LoginForm";
+import FormCard from "../components/cards/FormCard";
+import LoginForm from "../components/forms/LoginForm";
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { login } from "../hooks/auth";
+import { login } from "../../hooks/auth";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const LoginForm = () => {
@@ -32,9 +32,6 @@ const LoginForm = () => {
         console.log(data);
 
         if (data) {
-          // const logged = data ? true : false;
-          // const access_token = data?.access_token;
-          // const refresh_token = data?.refresh_token;
           login(data);
           navigate(from, { replace: true });
         } else {

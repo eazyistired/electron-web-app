@@ -1,8 +1,8 @@
 import React from "react";
-import SignUpForm from "../components/SignUpForm";
+import SignUpForm from "../components/forms/SignUpForm";
 import Layout from "./Layout";
 import { Link } from "react-router-dom";
-import FormCard from "../components/FormCard";
+import FormCard from "../components/cards/FormCard";
 
 const SignUpPage = () => {
   return (
